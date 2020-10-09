@@ -1,0 +1,266 @@
+  /* font-family: 'Fredoka One', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Righteous', cursive;
+  font-family: 'Varela Round', sans-serif; */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: black;
+  }
+
+  h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.2em;
+  }
+
+  nav {
+    font-size: 1em;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  /* IDEA: navigation bar */
+  nav {
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  nav:hover {
+    box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.3);
+    z-index: 7;
+  }
+
+  /* IDEA: slideshow carousel */
+  .carousel-caption h1 {
+    font-family: 'Righteous', cursive;
+  }
+
+  .carousel-caption p {
+    color: white;
+  }
+
+  .carousel-item img {
+    filter: brightness(60%);
+  }
+
+  /* IDEA: information pannel */
+  .info {
+    background-color: white;
+    padding: 5%;
+  }
+
+  .info h4, p {
+    text-align: center;
+    color: black;
+  }
+
+  .info img {
+    padding: 10%;
+  }
+
+  .certified {
+    height: 198px;
+    width: 198px;
+  }
+
+  /* IDEA: feature products */
+  .f-products h5 {
+    text-align: left;
+    color: black;
+    font-family: 'Righteous', cursive;
+  }
+
+  .f-products p {
+    text-align: left;
+    color: black;
+  }
+
+  .f-products {
+    padding: 12% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: white;
+  }
+
+  .fpimg:hover {
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    z-index: 99;
+  }
+
+  .fpdes {
+    height: 80%;
+  }
+
+
+  .background {
+    background-color: #fd5e53;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .container h1 {
+    font-family: 'Fredoka One', cursive;
+    padding: 2%;
+    color: white;
+  }
+
+  /* IDEA: about company */
+  .ab-com {
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  .about {
+    margin: 2% 0 0 0;
+  }
+
+  /* IDEA: bottom to top */
+  .arrow-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+  }
+
+  .arrow-btn a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #edc988;
+    display: block;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+
+  .arrow-btn a span {
+    color: white;
+    line-height: 39px;
+    font-size: 25px;
+  }
+
+  .arrow-btn a:hover {
+    display: block;
+    background-color: #ff971d;
+  }
+
+  .w {
+    margin-bottom: 200%;
+  }
+
+  @media only screen and (mix-width: px) {
+    h4, h1 {
+      font-size: 3em;
+    }
+
+    h5 {
+      font-size: 2em;
+    }
+
+    .f-products p {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 3em;
+    }
+
+    nav {
+      font-size: 2em;
+    }
+
+    /* IDEA: bottom to top */
+    .arrow-btn {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 2;
+    }
+
+    .arrow-btn a {
+      height: 99px;
+      width: 97px;
+      text-align: center;
+      background: #edc988;
+      display: block;
+      border-radius: 100%;
+      transition: 0.3s;
+    }
+
+    .arrow-btn a span {
+      color: white;
+      line-height: 96px;
+      font-size: 75px;
+    }
+
+    .arrow-btn a:hover {
+      display: block;
+      background-color: #ff971d;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    h4, h1 {
+      font-size: 3em;
+    }
+
+    h5 {
+      font-size: 2em;
+    }
+
+    .f-products p {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 3em;
+    }
+
+    nav {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-family: 'Righteous', cursive;
+      font-size: 1.6em;
+    }
+
+    /* IDEA: bottom to top */
+    .arrow-btn {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 2;
+    }
+
+    .arrow-btn a {
+      height: 99px;
+      width: 97px;
+      text-align: center;
+      background: #edc988;
+      display: block;
+      border-radius: 100%;
+      transition: 0.3s;
+    }
+
+    .arrow-btn a span {
+      color: white;
+      line-height: 96px;
+      font-size: 75px;
+    }
+
+    .arrow-btn a:hover {
+      display: block;
+      background-color: #ff971d;
+    }
+
+    .certified {
+      height: 298px;
+      width: 298px;
+    }
+  }
