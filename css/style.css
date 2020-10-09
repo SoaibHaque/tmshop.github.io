@@ -149,10 +149,6 @@
     background-color: #ff971d;
   }
 
-  .w {
-    margin-bottom: 200%;
-  }
-
   @media only screen and (mix-width: px) {
     h4, h1 {
       font-size: 3em;
