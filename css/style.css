@@ -37,6 +37,7 @@
 
   /* IDEA: slideshow carousel */
   .carousel-caption h1 {
+    font-size: 260%;
     font-family: 'Righteous', cursive;
   }
 
@@ -250,6 +251,11 @@
       font-size: 1.6em;
     }
 
+    /* IDEA: carousel slideshow */
+    .carousel-caption h1 {
+      font-size: 300%;
+      font-family: 'Righteous', cursive;
+    }
     /* IDEA: bottom to top */
     .arrow-btn {
       position: fixed;
@@ -259,8 +265,8 @@
     }
 
     .arrow-btn a {
-      height: 99px;
-      width: 97px;
+      height: 129px;
+      width: 127px;
       text-align: center;
       background: #edc988;
       display: block;
@@ -270,8 +276,8 @@
 
     .arrow-btn a span {
       color: white;
-      line-height: 96px;
-      font-size: 75px;
+      line-height: 126px;
+      font-size: 85px;
     }
 
     .arrow-btn a:hover {
