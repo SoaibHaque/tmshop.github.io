@@ -198,6 +198,25 @@
       display: block;
       background-color: #ff971d;
     }
+
+    /* IDEA: feature product */
+    .fpdes {
+      height: 90%;
+      font-size: 0.6em;
+    }
+
+    .fpdes p {
+      padding: 0 auto auto auto;
+      margin: auto auto 0 auto;
+    }
+
+    .fpdes h5 {
+      padding: auto auto 0 auto;
+    }
+
+    .fpimg {
+      height: 102%;
+    }
   }
 
   @media only screen and (max-width: 992px) {
@@ -274,8 +293,8 @@
     .fpdes h5 {
       padding: auto auto 0 auto;
     }
-.fpimg{
-  height: 102%;
-}
 
+    .fpimg {
+      height: 102%;
+    }
   }
