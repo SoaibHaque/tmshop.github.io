@@ -155,76 +155,7 @@
     background-color: #ff971d;
   }
 
-  @media only screen and (mix-width: px) {
-    h4, h1 {
-      font-size: 3em;
-    }
-
-    h5 {
-      font-size: 2em;
-    }
-
-    .f-products p {
-      font-size: 2em;
-    }
-
-    p {
-      font-size: 3em;
-    }
-
-    nav {
-      font-size: 2em;
-    }
-
-    /* IDEA: bottom to top */
-    .arrow-btn {
-      position: fixed;
-      bottom: 40px;
-      right: 40px;
-      z-index: 2;
-    }
-
-    .arrow-btn a {
-      height: 99px;
-      width: 97px;
-      text-align: center;
-      background: #edc988;
-      display: block;
-      border-radius: 100%;
-      transition: 0.3s;
-    }
-
-    .arrow-btn a span {
-      color: white;
-      line-height: 96px;
-      font-size: 75px;
-    }
-
-    .arrow-btn a:hover {
-      display: block;
-      background-color: #ff971d;
-    }
-
-    /* IDEA: feature product */
-    .fpdes {
-      height: 90%;
-      font-size: 0.6em;
-    }
-
-    .fpdes p {
-      padding: 0 auto auto auto;
-      margin: auto auto 0 auto;
-    }
-
-    .fpdes h5 {
-      padding: auto auto 0 auto;
-    }
-
-    .fpimg {
-      height: 102%;
-    }
-  }
-
+  /* IDEA: for phone */
   @media only screen and (max-width: 992px) {
     h4, h1 {
       font-size: 3em;
@@ -256,6 +187,7 @@
       font-size: 300%;
       font-family: 'Righteous', cursive;
     }
+
     /* IDEA: bottom to top */
     .arrow-btn {
       position: fixed;
@@ -282,7 +214,51 @@
 
     .arrow-btn a:hover {
       display: block;
-      background-color: #ff971d;
+      -webkit-animation: color 0.6s forwards;
+      -moz-animation: color 0.6s forwards;
+      -o-animation: color 0.6s forwards;
+    }
+
+    @-webkit-keyframes color {
+      0% {
+        background-color: #edc988;
+      }
+
+      50% {
+        background-color: #ff971d;
+      }
+
+      100% {
+        background-color: #edc988;
+      }
+    }
+
+    @-moz-keyframes color {
+      0% {
+        background-color: #edc988;
+      }
+
+      50% {
+        background-color: #ff971d;
+      }
+
+      100% {
+        background-color: #edc988;
+      }
+    }
+
+    @-o-keyframes color {
+      0% {
+        background-color: #edc988;
+      }
+
+      50% {
+        background-color: #ff971d;
+      }
+
+      100% {
+        background-color: #edc988;
+      }
     }
 
     .certified {
