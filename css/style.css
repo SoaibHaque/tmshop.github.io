@@ -97,7 +97,9 @@
   .fpdes {
     height: 80%;
   }
-
+.fpimg{
+  height: 102%;
+}
   .background {
     background-color: #fd5e53;
     width: 100%;
