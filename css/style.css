@@ -22,6 +22,7 @@
   a:hover {
     text-decoration: none;
   }
+
   /* IDEA: navigation bar */
   nav {
     box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3);
@@ -97,7 +98,6 @@
     height: 80%;
   }
 
-
   .background {
     background-color: #fd5e53;
     width: 100%;
@@ -149,7 +149,7 @@
     background-color: #ff971d;
   }
 
-  @media only screen and (mix-width:600 px) {
+  @media only screen and (mix-width: 600px) {
     h4, h1 {
       font-size: 3em;
     }
@@ -259,4 +259,23 @@
       height: 298px;
       width: 298px;
     }
+
+    /* IDEA: feature product */
+    .fpdes {
+      height: 90%;
+      font-size: 0.6em;
+    }
+
+    .fpdes p {
+      padding: 0 auto auto auto;
+      margin: auto auto 0 auto;
+    }
+
+    .fpdes h5 {
+      padding: auto auto 0 auto;
+    }
+.fpimg{
+  height: 102%;
+}
+
   }
