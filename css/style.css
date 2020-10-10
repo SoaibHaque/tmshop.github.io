@@ -10,13 +10,12 @@
     color: black;
   }
 
-  h2 {
+  /* h2 {
     font-family: 'Righteous', cursive;
     font-size: 1.2em;
-  }
-
+  } */
   nav {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   a:hover {
@@ -33,6 +32,11 @@
   nav:hover {
     box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.3);
     z-index: 7;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.4em;
+    font-family: serif;
   }
 
   /* IDEA: slideshow carousel */
@@ -174,12 +178,12 @@
     }
 
     nav {
-      font-size: 1.5em;
+      font-size: 2.1em;
     }
 
-    h2 {
-      font-family: 'Righteous', cursive;
-      font-size: 1.6em;
+    .navbar-brand h2 {
+      font-size: 2.4em;
+      font-family: serif;
     }
 
     /* IDEA: carousel slideshow */
@@ -269,7 +273,7 @@
     /* IDEA: feature product */
     .fpdes {
       height: 90%;
-      font-size: 0.6em;
+      font-size: 0.9em;
     }
 
     .fpdes p {
