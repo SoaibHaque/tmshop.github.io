@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@600&family=Righteous&family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="css\img\favicon-logo.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -44,9 +45,9 @@
       </a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#contactme" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -111,7 +112,7 @@
 
   <!-- IDEA: information -->
 
-  <div class="info">
+  <div id="service" class="info">
     <div class="container">
       <div class="row ">
         <div class="col-lg-4">
@@ -351,7 +352,7 @@
 
   <!-- IDEA: about company -->
 
-  <div class="container ab-com">
+  <div id="about" class="container ab-com">
     <div class="row">
       <div class="col-lg-6">
         <img class="mx-auto d-block" src="css\img\logo.png" width="230px" height="195px">
@@ -586,23 +587,65 @@
       <source src="css/video/video.mp4" type="video/mp4">
     </video>
   </div>
+  <!-- IDEA: end of video -->
+  <!-- IDEA: gallery -->
 
-    <!-- IDEA: gallery -->
+  <main>
+    <div class="gallery1"><img src="css/img/gallery-1.jpg" class="img-fluid"></div>
+    <div class="gallery2"><img src="css/img/gallery-2.jpg" class="img-fluid mx-auto d-block"></div>
+    <div class="gallery3"><img src="css/img/gallery-3.jpg" class="img-fluid mx-auto d-block"></div>
+    <div class="gallery4"><img src="css/img/gallery-4.jpg" class="img-fluid mx-auto d-block"></div>
+    <div class="gallery5"><img src="css/img/gallery-5.jpg" class="img-fluid mx-auto d-block"></div>
+  </main>
 
-    <main>
-      <div class="gallery1"><img src="css/img/gallery-1.jpg" class="img-fluid"></div>
-      <div class="gallery2"><img src="css/img/gallery-2.jpg" class="img-fluid mx-auto d-block"></div>
-      <div class="gallery3"><img src="css/img/gallery-3.jpg" class="img-fluid mx-auto d-block"></div>
-      <div class="gallery4"><img src="css/img/gallery-4.jpg" class="img-fluid mx-auto d-block"></div>
-      <div class="gallery5"><img src="css/img/gallery-5.jpg" class="img-fluid mx-auto d-block"></div>
-    </main>
+  <!-- IDEA: end of gallery -->
 
-    <!-- IDEA: end of gallery -->
+  <!-- IDEA: contact me -->
 
+  <div id="contactme" class="background">
+    <div class="container">
+      <div class="row">
+        <h3>Contact Us</h3>
+        <form method="post">
+          <label for="name">Enter name</label><br>
+          <input id="name" type="text" name="textdata" value="" placeholder="Enter name"><br>
+          <label for="email">Enter email</label><br>
+          <input id="email" type="email" name="textdata" value="" placeholder="Enter email"><br>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="name" rows="8" cols="80" placeholder="Message"></textarea><br>
+          <input id="cheackbox" type="checkbox" name="" value="">
+          <label for="cheackbox">Subscribe to newsletter</label> <br> <br>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
+  <!-- IDEA: contact me -->
+
+  <div class="timevalue">
+    <h2>TIME VALUE</h2>
+    <p>Lorem ipsum dolor sit amet,d minim veniam, quis nostratur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a><br> <br>
+    <p>© Copy Right Time Value</p>
+  </div>
+  </div>
 
   </div>
 
 </body>
 
 </html>
+
+<?php
+
+if(isset($_POST['textdata']))
+{
+  $data=$_POST['textdata'];
+
+  $fp = fopen('data.txt', 'a');
+  fwrite($fp, $data);
+  fclose($fp);
+}
+?>
