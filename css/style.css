@@ -157,6 +157,11 @@
     background-color: #ff971d;
   }
 
+  /* IDEA: video */
+  .video {
+    margin: 8% auto auto auto;
+  }
+
   /* IDEA: gallery */
   main {
     margin: 80px 120px;
