@@ -606,18 +606,19 @@
     <div class="container">
       <div class="row">
         <h3>Contact Us</h3>
-        <form method="post">
+        <form method="post" action="connect.php">
           <label for="name">Enter name</label><br>
-          <input id="name" type="text" name="textdata" value="" placeholder="Enter name"><br>
+          <input id="name" type="text" name="name" value="" placeholder="Enter name"><br>
           <label for="email">Enter email</label><br>
-          <input id="email" type="email" name="textdata" value="" placeholder="Enter email"><br>
+          <input id="email" type="email" name="email" value="" placeholder="Enter email"><br>
           <label for="message">Message</label><br>
-          <textarea id="message" name="name" rows="8" cols="80" placeholder="Message"></textarea><br>
-          <input id="cheackbox" type="checkbox" name="" value="">
+          <textarea id="message" name="comments" rows="8" cols="80" placeholder="Message"></textarea><br>
+          <input id="cheackbox" type="checkbox" name="news_letter" value="">
           <label for="cheackbox">Subscribe to newsletter</label> <br> <br>
           <button type="submit">submit</button>
         </form>
       </div>
+    
     </div>
   </div>
 
@@ -637,16 +638,3 @@
 </body>
 
 </html>
-
-
-<?php
-
-if(isset($_POST['textdata']))
-{
-$data=$_POST['textdata'];
-
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $data);
-fclose($fp);
-}
-?>
