@@ -28,12 +28,18 @@
 
   <script src="js/jquery.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script>
+$(window).scroll(function(){
+
+$('nav').toggleClass('scrolled',$(this).scrollTop()>80);
+});
+  </script>
 
   <!-- IDEA: end of jquary and bootstrap -->
 
   <!-- IDEA: navbar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bgcolor">
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,6 +57,7 @@
       </ul>
     </div>
   </nav>
+
 
   <!-- IDEA: end of navbar -->
 
@@ -618,7 +625,7 @@
           <button type="submit">submit</button>
         </form>
       </div>
-    
+
     </div>
   </div>
 
