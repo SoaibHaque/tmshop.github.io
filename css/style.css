@@ -4,6 +4,8 @@
   font-family: 'Varela Round', sans-serif; */
   html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
   }
 
   body {
@@ -11,6 +13,10 @@
     margin: 0;
     padding: 0;
   }
+
+.row h3{
+  padding: 3% 0 0 0;
+}
 
   nav {
     font-size: 1.1em;
@@ -113,7 +119,6 @@
   .background {
     background-color: #fd5e53;
     width: 100%;
-    padding: 30px 0;
   }
 
   .container h1 {
@@ -161,11 +166,6 @@
     background-color: #ff971d;
   }
 
-  /* IDEA: video */
-  .video {
-    margin: 8% auto auto auto;
-  }
-
   /* IDEA: gallery */
   main {
     margin: 80px 120px;
@@ -211,6 +211,11 @@
   .gallery5:hover {
     filter: brightness(60%);
     transform: scale(1.1);
+  }
+
+  /* IDEA: video */
+  video {
+    display: block;
   }
 
   /* IDEA: contact */
@@ -473,4 +478,9 @@
       filter: brightness(60%);
       transform: scale(1.1);
     }
+    
+  /* IDEA: video */
+  video {
+    display: block;
+  }
   }
