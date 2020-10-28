@@ -24,18 +24,6 @@
 
   <!-- IDEA: end of bottom to top -->
 
-  <!-- IDEA:jquary first then bootstrap.js-->
-
-  <script src="js/jquery.js" charset="utf-8"></script>
-  <script src="js/bootstrap.min.js" charset="utf-8"></script>
-  <script>
-$(window).scroll(function(){
-
-$('nav').toggleClass('scrolled',$(this).scrollTop()>80);
-});
-  </script>
-
-  <!-- IDEA: end of jquary and bootstrap -->
 
   <!-- IDEA: navbar -->
 
@@ -642,6 +630,18 @@ $('nav').toggleClass('scrolled',$(this).scrollTop()>80);
 
   </div>
 
+  <!-- IDEA:jquary first then bootstrap.js-->
+
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script>
+  $(window).scroll(function(){
+
+    $('nav').toggleClass('scrolled',$(this).scrollTop()>80);
+  });
+</script>
+
+<!-- IDEA: end of jquary and bootstrap -->
 </body>
 
 </html>
